@@ -10,7 +10,7 @@
                         <div class="col-md-2">
                             <a href="{{ route('customers.create') }}" class="btn"
                                 style="background-color: #4643d3; color: white;"><i class="fas fa-plus"></i> Create
-                                Customer</a>
+                                Customer </a>
                         </div>
                         <div class="col-md-8">
                             <form action="">
@@ -75,7 +75,6 @@
                                     </td>
                                 </tr>
                             @endforeach
-
                         </tbody>
                     </table>
                 </div>
