@@ -28,7 +28,7 @@ class ImageController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return('bener');
     }
 
     /**
@@ -36,6 +36,14 @@ class ImageController extends Controller
      */
     public function show(string $id)
     {
+        /*
+        $database = app('firebase.firestore')
+            ->database()
+            ->collection('categories')
+            ->documents();
+
+        dd($database);*/
+
         $customer = customer::findOrFail($id);
         //return view('image.image', compact('customer'));
 
