@@ -28,7 +28,11 @@ class ImageController extends Controller
      */
     public function store(Request $request)
     {
+<<<<<<< HEAD
         return('bener !');
+=======
+        //
+>>>>>>> parent of ce2f645 (updated)
     }
 
     /**
@@ -36,14 +40,6 @@ class ImageController extends Controller
      */
     public function show(string $id)
     {
-        /*
-        $database = app('firebase.firestore')
-            ->database()
-            ->collection('categories')
-            ->documents();
-
-        dd($database);*/
-
         $customer = customer::findOrFail($id);
         //return view('image.image', compact('customer'));
 

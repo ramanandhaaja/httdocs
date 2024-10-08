@@ -52,16 +52,13 @@ imagettftext($img, 24, 0, 1080, 1545, $color, $font, $grand_total);
 header('Content-type: image/jpeg');
 
 /* create directory */
-$directory = "assets/uploads/certificates/user/";
+$directory="./assets/uploads/certificates/user/";
 
 /* image save */
 imagejpeg($img, $directory.$new_name);
-$jsonImagePath = $directory.$new_name;
+$imagePath = $directory.$new_name;
+?>
 
-/*
 <a href="{{ asset($imagePath) }}" style="color: #2c2c2c;"
     class="ms-1 me-1">{{ $customer->first_name }}</i></a>
-*/
-?>
-{"imagePath":"{{ asset($jsonImagePath) }}"}
 
